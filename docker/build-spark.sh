@@ -7,7 +7,7 @@ REPO_NAME=uprush
 
 # Build docker image.
 docker build --build-arg SPARK_VERSION=$SPARK_BUILD_VER \
-	-t apache-spark-$SPARK_BUILD_VER -f ./Dockerfile-spark .
+	-t apache-spark-$SPARK_BUILD_VER -f ./spark.Dockerfile .
 
 # Push to docker repository.
 docker tag apache-spark-$SPARK_BUILD_VER $REPO_NAME/apache-spark:$SPARK_BUILD_VER

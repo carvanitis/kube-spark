@@ -7,7 +7,7 @@ REPO_NAME=uprush
 
 # Build docker image.
 docker build --build-arg HIVE_VERSION=$HIVE_BUILD_VER \
-	-t apache-hive-$HIVE_BUILD_VER -f ./Dockerfile-hive .
+	-t apache-hive-$HIVE_BUILD_VER -f ./hive.Dockerfile .
 
 # Push to docker repository.
 docker tag apache-hive-$HIVE_BUILD_VER $REPO_NAME/apache-hive:$HIVE_BUILD_VER

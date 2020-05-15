@@ -3,7 +3,7 @@
 set -e
 
 SPARK_BUILD_VER=2.4.5
-REPO_NAME=uprush
+REPO_NAME=$1
 
 # Build docker image.
 docker build --build-arg SPARK_VERSION=$SPARK_BUILD_VER \

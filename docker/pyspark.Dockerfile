@@ -1,4 +1,5 @@
-FROM uprush/apache-spark:2.4.5
+ARG REPO
+FROM ${REPO}/apache-spark:2.4.5
 
 USER root
 

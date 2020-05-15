@@ -3,7 +3,7 @@
 set -e
 
 HADOOP_VER=3.2.1
-REPO_NAME=uprush
+REPO_NAME=$1
 
 # Build docker image.
 docker build --build-arg HADOOP_VERSION=$HADOOP_VER \

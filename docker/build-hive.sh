@@ -3,7 +3,7 @@
 set -e
 
 HIVE_BUILD_VER=3.1.2
-REPO_NAME=uprush
+REPO_NAME=$1
 
 # Build docker image.
 docker build --build-arg HIVE_VERSION=$HIVE_BUILD_VER \
